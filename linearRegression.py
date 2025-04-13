@@ -3,9 +3,6 @@
 # importing the two necessary libraries 
 import numpy as np
 import matplotlib.pyplot as plt
-
-# assigning seed value in order ot regenerate same output if needed
-np.random.seed(346)
 # defining linear regression class for the implementation of ml model
 class LinearRegression:
     '''defining the constructor for the class 
