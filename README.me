@@ -1,0 +1,29 @@
+# Linear Regression Implementation
+
+A Python implementation of Linear Regression (predicting numbers using a straight line) trained with Gradient Descent (an optimization algorithm).
+## Features
+
+- Class-based implementation 
+- Synthetic data generation
+- Training progress visualization
+- Loss history tracking
+- R-squared metric calculation
+- Convergence checking or stopping early
+
+## Usage
+
+```python
+from linear_regression import LinearRegression, generate_data
+
+# Generate data
+X, y = generate_data(n_samples=100, noise=1.5)
+
+# Initialize and train model
+model = LinearRegression(learning_rate=0.1, max_iter=1000)
+model.fit(X, y)
+
+# Make predictions
+y_pred = model.predict(X)
+
+# Evaluate
+print(f"R-squared: {model.r2_score(y, y_pred)}")
